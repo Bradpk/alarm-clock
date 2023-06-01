@@ -22,7 +22,6 @@ function checkAlarm() {
     const alarmTrack = new Date(now.toDateString() + ' ' + setAlarm.value);
 
     if (now >= alarmTrack) {
-        // Play the alarm sound
         alert('Alarm!');
     }
 }
@@ -30,10 +29,8 @@ function checkAlarm() {
 //----------------------------------------------------------------
 
 liveButton.addEventListener('click', function () {
-    // Disable the button to prevent multiple alarms
     liveButton.disabled = true;
 
-    // Start checking the alarm every second
     setInterval(checkAlarm, 1000);
 });
 
