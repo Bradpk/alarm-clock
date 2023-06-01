@@ -1,4 +1,5 @@
-/* These are the variable declarations and which HTML elements they are tied to:
+/* 
+these are the variable declarations and which HTML elements they are tied to:
 currentClockTime is tied to the second h2 tag
 currentDateTime is tied to the first h2 tag
 setAlarm is tied to the input tag
@@ -16,8 +17,8 @@ const magicbutton = document.getElementById("magicButton");
 updateCurrentTime is the function name. 
 now is equal to the date object which is the current date and time. 
 timeText is the date object put into a reading string format. 
-line 26 & 27 will make the text inside the second h2 tag a string of the current time 
-line 29 & 30 will make the text inside the first h2 tag a string of the current date
+line 26 & 27 will make the text inside the second h2 tag a string of the current time.
+line 29 & 30 will make the text inside the first h2 tag a string of the current date.
 */
 
 function updateCurrentTime() {
@@ -30,30 +31,42 @@ function updateCurrentTime() {
     currentDateTime.innerText = dateText;
 }
 
-//----------------------------------------------------------------
+/*
+checkAlarm is the function name.
+now is equal to the date object which is the current date and time. 
+alarmTrack is the date object and it tracks the current time in relation to the time the user inputs in the input box. 
+the if statement is saying that if the current time is greater or equal then alarmTrack time then an alert will happen.
+*/
 
 function checkAlarm() {
     const now = new Date();
     const alarmTrack = new Date(now.toDateString() + ' ' + setAlarm.value);
-
     if (now >= alarmTrack) {
         alert('Alarm!');
     }
 }
 
-//----------------------------------------------------------------
+/*
+this allows the functions to be triggered when the button is clicked.
+once the button is clicked it disables so that it can't be clicked again.
+the set interval below is tracking the checkAlarm function in increments of one second.
+*/
 
 liveButton.addEventListener('click', function () {
     liveButton.disabled = true;
-
     setInterval(checkAlarm, 1000);
 });
 
-//----------------------------------------------------------------
+/*
+the set interval below is tracking the updateCurrentTime function in increments of one second.
+*/
 
 setInterval(updateCurrentTime, 1000);
 
-//----------------------------------------------------------------
+/*
+the magicbutton event listener waits for the button to be pressed before triggered the function
+
+*/
 
 magicbutton.addEventListener("click", async () => {
     await Tone.start();
