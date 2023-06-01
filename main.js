@@ -1,7 +1,7 @@
 // Testing the Javascript file was connected to HTML
 function changeText () {
     const tryit = document.getElementById("test");
-    tryit.textContent = "Alarm Clock Project";
+    tryit.textContent = "";
     } 
     changeText()
     
