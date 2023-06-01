@@ -27,7 +27,7 @@ function currentTime() {
 
 function alarmTracker() {
     const time = new Date();
-    const alarmTrack = new Date(time.toDateString() + '' + setAlarm.value)
+    const alarmTrack = new Date(time.toDateString() + ' ' + alarmTimeInput.value);
 
     if (time >= alarmTrack) {
         alert('Wake up!')
