@@ -4,7 +4,7 @@ function changeText () {
     tryit.textContent = "Alarm Clock";
     } 
     changeText()
-
+//-----------------------------------------------------------------
 
     const currentClockTime = document.getElementById('clockTime');
     
