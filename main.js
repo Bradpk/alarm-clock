@@ -7,6 +7,7 @@ changeText()
 //---------------------------------------------------------------
 
 const currentClockTime = document.getElementById('clockTime');
+const currentDateTime = document.getElementById('dateTime')
 const setAlarm = document.getElementById('alarmInput')
 const liveButton = document.getElementById('buttonTrigger')
 
@@ -17,18 +18,18 @@ function currentTime() {
     const clockTimeText = time.toLocaleTimeString()
     currentClockTime.innerText = clockTimeText;
 
-    const day = time.getDay();
-    const month = time.getMonth();
-    const year = time.getFullYear();
+    const dateText = time.toDateString()
+    currentDateTime.innerText = dateText;
+}
+    
+//----------------------------------------------------------------
 
-    document.getElementById('day').textContent = day
-    document.getElementById('month').textContent = month
-    document.getElementById('year').textContent = year
+function alarmTracker() {
+const time = new Date();
+const alarmTrack = new Date(time.toDateString() + ' ' + setAlarm.value)
 }
 
 //----------------------------------------------------------------
-
-
     setInterval(currentTime, 1000);
 
 
