@@ -15,7 +15,6 @@ function changeText () {
     document.getElementById('minutes').textContent = minutes
     document.getElementById('seconds').textContent = seconds
     }
-    
-    document.getElementById('date').textContent = now
+    setInterval(currentTime, 1000);
     
     
