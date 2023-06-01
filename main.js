@@ -4,24 +4,23 @@ function changeText () {
     tryit.textContent = "";
     } 
     changeText()
+
+
+    const currentClockTime = document.getElementById('clockTime');
     
     function currentTime(){
     const now = new Date ();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
+    const clockTimeText = now.toLocaleTimeString()
+    currentClockTime.innerText = clockTimeText;
 
     const day = now.getDay();
     const month = now.getMonth();
     const year = now.getFullYear();
-    
-    document.getElementById('hours').textContent = hours
-    document.getElementById('minutes').textContent = minutes
-    document.getElementById('seconds').textContent = seconds
         
     document.getElementById('day').textContent = day
     document.getElementById('month').textContent = month
     document.getElementById('year').textContent = year
+
     }
     setInterval(currentTime, 1000);
     
