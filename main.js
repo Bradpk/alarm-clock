@@ -1,10 +1,24 @@
-const currentClockTime = document.getElementById('clockTime');
+/* These are the variable declarations and which HTML elements they are tied to:
+currentClockTime is tied to the second h2 tag
+currentDateTime is tied to the first h2 tag
+setAlarm is tied to the input tag
+liveButton is tied to the first button tag
+magicButton is tied to the second button tag
+*/
+
 const currentDateTime = document.getElementById('dateTime')
+const currentClockTime = document.getElementById('clockTime');
 const setAlarm = document.getElementById('alarmInput');
 const liveButton = document.getElementById('buttonTrigger');
 const magicbutton = document.getElementById("magicButton");
 
-//----------------------------------------------------------------
+/*
+updateCurrentTime is the function name. 
+now is equal to the date object which is the current date and time. 
+timeText is the date object put into a reading string format. 
+line 26 & 27 will make the text inside the second h2 tag a string of the current time 
+line 29 & 30 will make the text inside the first h2 tag a string of the current date
+*/
 
 function updateCurrentTime() {
     const now = new Date();
