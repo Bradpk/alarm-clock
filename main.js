@@ -1,27 +1,34 @@
-// Testing the Javascript file was connected to HTML
-function changeText () {
+// Testing the Javascript file is connected to HTML
+function changeText() {
     const tryit = document.getElementById("test");
     tryit.textContent = "Alarm Clock";
-    } 
-    changeText()
-//-----------------------------------------------------------------
+}
+changeText()
+//---------------------------------------------------------------
 
-    const currentClockTime = document.getElementById('clockTime');
-    
-    function currentTime(){
-    const now = new Date ();
-    const clockTimeText = now.toLocaleTimeString()
+const currentClockTime = document.getElementById('clockTime');
+const setAlarm = document.getElementById('alarmInput')
+const liveButton = document.getElementById('buttonTrigger')
+
+//----------------------------------------------------------------
+
+function currentTime() {
+    const time = new Date();
+    const clockTimeText = time.toLocaleTimeString()
     currentClockTime.innerText = clockTimeText;
 
-    const day = now.getDay();
-    const month = now.getMonth();
-    const year = now.getFullYear();
-        
+    const day = time.getDay();
+    const month = time.getMonth();
+    const year = time.getFullYear();
+
     document.getElementById('day').textContent = day
     document.getElementById('month').textContent = month
     document.getElementById('year').textContent = year
+}
 
-    }
+//----------------------------------------------------------------
+
+
     setInterval(currentTime, 1000);
-    
-    
+
+
