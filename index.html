@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.min.js"></script>
+  <title>Alarm Clock</title>
 </head>
-
 <body>
-    <header></header>
-    <h1 id="test">Hello Buddy</h1>
+  <h1>Alarm Clock</h1>
+  
+  <input type="time" id="alarmInput">
+  <button id="buttonTrigger">Set Alarm</button>
+  
+  <h2 id="clockTime"></h2>
 
-    <input type="time" id="'alarmInput"></input>
-    <button id="buttonTrigger">Set Alarm</button>
+  <h2 id="dateTime"></h2>
 
-    <div class="clock">
-        <span id="dateTime"></span>
-    </div>
-
-    <div class="clock">
-        <span id="clockTime"></span>
-    </div>
-
-
-    <script src="main.js"></script>
+  
+  <script src="main.js"></script>
 </body>
-
 </html>
