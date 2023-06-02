@@ -37,3 +37,31 @@ Alarm
         
 Alarm Button 
 - Has a user input 
+
+-----------------------------------------------------------------------------------------------
+
+BEGIN
+
+INITIALIZE() variables
+Current Date: (currentDate)
+Current Time: (currentTime)
+Alarm: off 
+Alarm Button: undefined
+
+INITIALIZE() functions 
+
+FUNC
+    CREATE function that:
+        Use the "new Date" method to display the current date and change it's format to make it more readable
+        Use the "new Date" method to display the current time and change it's format to make it more readable
+
+FUNC
+     CREATE function that: 
+        Tracks the current time in relation to the time entered by the user
+        IF the current time is greater than the entered time then an alert will trigger
+        
+FUNC
+     CREATE function that: 
+        Sets the other functions to be connected with the alarm button and calls them upon "click"
+
+END
