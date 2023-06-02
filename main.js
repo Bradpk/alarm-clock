@@ -42,7 +42,7 @@ function checkAlarm() {
     const now = new Date();
     const alarmTrack = new Date(now.toDateString() + ' ' + setAlarm.value);
     if (now >= alarmTrack) {
-        alert('Alarm!');
+        alert('Wake Up!');
     }
 }
 
