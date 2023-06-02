@@ -64,8 +64,13 @@ the set interval below is tracking the updateCurrentTime function in increments 
 setInterval(updateCurrentTime, 1000);
 
 /*
-the magicbutton event listener waits for the button to be pressed before triggered the function
-
+the magicbutton event listener waits for the button to be pressed before triggering the function
+the await tone start makes the audio ready for playback as webpages will not automatically start audio 
+synth new tone grabs the synthisizer from tone.js 
+the synth has three parameters. 
+the first is the musical note that gets triggered. 
+the second is the duration of the note.
+the third is when the note is played.
 */
 
 magicbutton.addEventListener("click", async () => {
