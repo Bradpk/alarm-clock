@@ -13,7 +13,9 @@ header {
 
 h1 {
     margin-top: 200px;
-    font-size: 55px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
     display: flex;
     justify-content: center;
     color: aliceblue;
@@ -21,7 +23,9 @@ h1 {
 }
 
 h2 {
-    font-size: 55px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
     display: flex;
     justify-content: center;
     color: aliceblue;
@@ -29,13 +33,13 @@ h2 {
 }
 
 button {
-font-size:35px;
+font-size:30px;
 border-radius: 5px;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 input {
-font-size:35px;
+font-size:30px;
 border-radius: 5px;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
