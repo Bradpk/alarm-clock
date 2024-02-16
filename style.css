@@ -47,6 +47,11 @@ h2 {
 
         button:hover {
             background-color: rgb(0, 255, 0);
+            cursor: pointer;
+        }
+
+        input:hover {
+            cursor: text;
         }
 
 
