@@ -55,7 +55,7 @@ function checkAlarm() {
         synth.triggerAttackRelease("E4", "4n", now + 4.8)
         setTimeout(() => {
             alert('Wake Up!');
-        }, 3000);
+        }, 6000);
         clearInterval(alarmInterval);
         liveButton.disabled = false;
     }
