@@ -45,22 +45,14 @@ function checkAlarm() {
         Tone.start();
         const synth = new Tone.Synth().toDestination();
         const now = Tone.now();
-        synth.triggerAttackRelease("B5", "32n", now)
-        synth.triggerAttackRelease("B5", "32n", now + 0.1)
-        synth.triggerAttackRelease("F#6", "32n", now + 0.2)
-        synth.triggerAttackRelease("B6", "32n", now + 0.3)
-        synth.triggerAttackRelease("B5", "32n", now + 0.6)
-        synth.triggerAttackRelease("B5", "32n", now + 0.7)
-        synth.triggerAttackRelease("F#6", "32n", now + 0.8)
-        synth.triggerAttackRelease("B6", "32n", now + 0.9)
-        synth.triggerAttackRelease("B5", "32n", now + 1.2)
-        synth.triggerAttackRelease("B5", "32n", now + 1.3)
-        synth.triggerAttackRelease("F#6", "32n", now + 1.4)
-        synth.triggerAttackRelease("B6", "32n", now + 1.5)
-        synth.triggerAttackRelease("B5", "32n", now + 1.8)
-        synth.triggerAttackRelease("B5", "32n", now + 1.9)
-        synth.triggerAttackRelease("F#6", "32n", now + 2.0)
-        synth.triggerAttackRelease("B6", "32n", now + 2.1)
+        synth.triggerAttackRelease("G#4", "2n", now)
+        synth.triggerAttackRelease("E4", "2n", now + 0.6)
+        synth.triggerAttackRelease("F#4", "2n", now + 1.2)
+        synth.triggerAttackRelease("B3", "4n", now + 1.8)
+        synth.triggerAttackRelease("B3", "2n", now + 3)
+        synth.triggerAttackRelease("F#4", "2n", now + 3.6)
+        synth.triggerAttackRelease("G#4", "2n", now + 4.2)
+        synth.triggerAttackRelease("E4", "4n", now + 4.8)
         setTimeout(() => {
             alert('Wake Up!');
         }, 3000);
